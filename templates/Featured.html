@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h1> {{ title1 }} </h1>
+    <h3> {{ welcome1 }} </h3>
+
+   
+    <h2> {{ title2 }} </h2>
+    <h3> {{ welcome2 }} </h3>
+
+    {% if plan_list|length == 0 %}
+        <p> No Plans Yet?! </p>
+    {% endif %}
+
+    <h2> {{ title3 }} </h2>
+    <h3> {{ welcome3 }} </h3>
+
+    {% if event_list|length == 0 %}
+        <p> No Events Yet?! </p>
+    {% endif %}
+
+{% endblock %}

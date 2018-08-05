@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <style>
+            *{
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .error {
+                color: red;
+            }
+            
+        </style>    
+    </head>
+    <body>
+        <header>
+            <div>
+                <table>
+                
+                         <a href= '/Home'> Home  </a>
+                         &NonBreakingSpace;
+                         &NonBreakingSpace;
+                         <a href= '/Training'> Training Plans </a> 
+                         &NonBreakingSpace;
+                         &NonBreakingSpace;
+                         <a href= '/Running'> Running Events </a> 
+                         &NonBreakingSpace;
+                         &NonBreakingSpace;
+                         <a href= '/login'> Login </a> 
+                         &NonBreakingSpace;
+                         &NonBreakingSpace;
+                         <a href= '/logout'> Logout </a> 
+                        <!--<td> <a href= '/signup'> Signup </a> </td>-->
+                    
+                </table>
+            </div>
+        </header>
+        <br>
+        <main>
+
+                <table>
+                        <th colspan="8"></th>
+                        <tr>
+                            <img src="handoff.jpg"/ alt="Runner Logo">
+                            &NonBreakingSpace;
+                            <img src="Handoff2.jpg"/ alt="Event Photo">
+                            
+                        </tr>
+                    </table>
+
+            {% block content %}
+
+            {% endblock %}
+
+        </main>
+        <br>
+    
+        </footer>
+    </body>
+</html>
+
